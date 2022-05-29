@@ -1,0 +1,409 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+body{
+    line-height: 1.5;
+}
+img{
+    max-width: 100%;
+    height :auto;
+}
+a{
+    text-decoration: none;
+}
+.mgl-8px{
+    margin-left: 8px;
+}
+.mgbt-48px{
+    margin-bottom: 48px;
+}
+.pdtp-24px{
+    padding-top: 24px;
+}
+.pdtp-8px{
+    padding-top: 8px;
+}
+.pdbt-24px{
+    padding-bottom: 24px;
+}
+.pdl-16px{
+    padding-left: 16px;
+}
+.pdr-16px{
+    padding-right: 16px;
+}
+.fs-12px{
+    font-size: 12px;
+}
+.fs-14px{
+    font-size: 14px;
+}
+.fs-16px{
+    font-size: 16px;
+}
+.fs-18px{
+    font-size: 18px;
+}
+.fs-20px{
+    font-size: 20px;
+}
+.fs-24px{
+    font-size: 24px;
+}
+.fs-29px{
+    font-size: 29px;
+}
+.fs-32px{
+    font-size: 32px;
+}
+.fs-48px{
+    font-size: 48px;
+}
+.ffml-r{
+    font-family:  Sans TC, Regular;
+}
+.ffml-b{
+    font-family:  Noto Sans TC, Bold;
+    font-weight: 525;
+}
+.fc-g{
+  color: #56C4C5; 
+}
+.fc-gray{
+    color: #747474;
+}
+.btn-top{
+    position: fixed;
+    z-index: 3;
+    right: 16px;
+    bottom: 16px;
+}
+.wrap1{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/banner.svg);
+    background-position: right top;
+    background-size: 885px auto;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.banner-bkgd{
+    position: absolute;
+    background-color: #F7F9FD;
+    border-radius: 0px 0px 0px 300px;
+    width: 100vw;
+    height: 470px;
+    z-index: -1;
+}
+.top-img{
+    position: absolute;
+    width: 885px;
+    height: auto;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+}
+.header{
+    max-width: 1088px;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-bottom: 30px;
+}
+.logo img{
+    max-width:218px;
+}
+.red-btn{
+    font-family: Noto Sans TC, Regular;
+    color:white;
+    background-color: #FF5D50;
+    padding: 8px 32px;
+    border-radius: 22px;
+}
+.red-btn:hover{
+    background-color: #e53428;
+}
+.top-content{
+    max-width: 1088px;
+    margin: 0 auto;
+    display:flex;
+    padding-top: 92px;
+    padding-bottom: 180px;
+    margin-bottom: 100px;
+}
+.top-content-slogen h1{
+    margin-bottom: 16px;
+}
+.wrap2{
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.second-content{
+    max-width: 1088px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.first-content h1{
+    margin-bottom: 48px;
+}
+.btn-list{
+    display: flex;
+    margin-right: -16px;
+    margin-top: 48px;
+    margin-bottom: 54px;
+}
+.btn-list a{
+    display: block;
+    margin-right: 16px;
+    color: #56C4C5;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border: 1px solid #56C4C5;
+    border-radius: 27px;
+}
+.btn-list a:hover{
+    color: #fff;
+    background-color: #56C4C5;
+}
+.w2-card-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    margin-right: -21px;
+}
+.w2-card{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 2px 10px #00000014;
+    padding-bottom: 32px;
+    margin-right: 21px;
+}
+.card-title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #DDDDDD;
+    margin-bottom: 32px;
+}
+.w2-card p{
+    text-align: center;
+}
+.card-item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.data-1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F5F5F5;
+    border-radius: 12px;
+}
+.card-describe{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+.cd-check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.cd-check .check{
+    margin-bottom: 0px;
+}
+.rn-btn {
+    text-align: center;
+    color: #fff;
+    background-color: #56C4C5;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 27px;
+}
+.forth-content{
+    margin: 0 auto;
+    max-width: 909px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.forth-content h2{
+    margin-bottom: 48px;
+}
+.qa-list{
+    width: 100%;
+}
+.qa{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+.anwser{
+    margin-top: 24px;
+}
+.qa-title{
+    display: flex;
+    justify-content: space-between;
+}
+.footer{
+    width: 100%;
+    background-color: #F5F5F5;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.footer p{
+    text-align: center;
+}
+
+@media(max-width:768px) {
+    .wrap1{
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/banner_sm.svg);
+        background-position: right top;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    }
+    .banner-bkgd{
+        height: 495px;
+    }
+    .header{
+        border-bottom: 2px solid #FFD153;
+    }
+    .logo img{
+        max-height:34px;
+    }
+    .top-content{
+        flex-wrap: wrap;
+    }
+    .top-content-slogen h4{
+        font-size: 16px;
+    }
+    .top-content-slogen h1{
+        font-size: 32px;
+    }
+    .top-content-slogen p{
+        font-size: 16px;
+    }
+    .top-content{
+        flex-wrap: wrap;
+        margin-bottom: 99px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .second-content h1{
+        font-size: 28px;
+        text-align: center;
+    }
+    .btn-list{ 
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    .btn-list a{
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-right: 6px;
+        margin-bottom: 8px;
+    }
+    .w2-card{
+        margin-bottom: 24px;
+    }
+    .w2-card-list{
+        flex-wrap: wrap;
+    }
+    .card-item {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}

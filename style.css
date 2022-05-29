@@ -1,0 +1,559 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+body{
+    line-height: 1.5;
+}
+img{
+    max-width: 100%;
+    height :auto;
+}
+a{
+    text-decoration: none;
+}
+.fs-16px{
+    font-size: 16px;
+}
+.fs-18px{
+    font-size: 18px;
+}
+.fs-20px{
+    font-size: 20px;
+}
+.fs-24px{
+    font-size: 24px;
+}
+.fs-32px{
+    font-size: 32px;
+}
+.fs-48px{
+    font-size: 48px;
+}
+.ffml-r{
+    font-family:  Sans TC, Regular;
+}
+.ffml-b{
+    font-family:  Noto Sans TC, Bold;
+    font-weight: 525;
+}
+.fc-g{
+  color: #56C4C5; 
+}
+.fc-gray{
+    color: #747474;
+}
+.btn-top{
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 3;
+}
+.wrap1{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg),url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball01.svg);
+    background-repeat: no-repeat;
+    background-position: top right,-221px 589px;
+    background-size: 851.5px 768px,360px 360px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.header{
+    max-width: 1088px;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-bottom: 30px;
+}
+.logo img{
+    max-width:218px;
+}
+.red-btn{
+    font-family: Noto Sans TC, Regular;
+    color:white;
+    background-color: #FF5D50;
+    padding: 8px 32px;
+    border-radius: 22px;
+}
+.red-btn:hover{
+    background-color: #e53428;
+}
+.top-content{
+    max-width: 1088px;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 217px;
+}
+.second-content{
+    max-width: 1088px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+.top-content-slogen, .top-content-img{
+    width: 50%;
+}
+.top-content-img img{
+    max-width: 532px;
+}
+.second-content h2{
+    margin-bottom: 48px;
+}
+.soclal-media{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;    
+}
+.soclal-media ul{
+    display: flex;
+    justify-content: space-between;
+}
+.soclal-media li{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 33%;
+}
+.soclal-media img{
+    max-width: 90px;
+    margin-bottom: 24px;
+}
+.soclal-media h3{
+    margin-bottom: 24px;
+}
+.soclal-media p{
+    text-align: center;
+}
+.third-content{
+    max-width: 1088px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+.third-content .fs-20px{
+    margin-bottom: 48px;
+    text-align: center;
+}
+.third-content h2{
+    margin-bottom: 16px;
+}
+.card-list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-right: -16px;
+}
+.card-item{
+    width: 25%;
+    padding-right: 16px;
+}
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 12px 12px 12px 12px;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px #00000014;
+}
+.card img{
+    line-height: 0px;
+    border-radius: 12px 12px 0px 0px;
+}
+.card-describe{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 16px 16px 24px 16px;
+}
+.card-describe h6{
+    margin-bottom: 16px;
+}
+.card-describe p{
+    text-align: center;
+}
+.card4-p{
+    padding-bottom: 24px;
+}
+.forth-content{
+    max-width: 1088px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.fc-left ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.fc-left-card li{
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 48px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 10px #00000014;
+    margin-right: 47px;
+    margin-bottom: 28px;
+    width: 230px;
+    background-color: #fff;
+}
+.icon{
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 10px #00000014;
+    position: relative;
+    margin-bottom: 24px;
+}
+.icon img{
+    position: absolute;
+    transform: translate(-50%, -50%); 
+    top: 50%;
+    left: 50%;
+}
+.fc-left-card h5{
+    margin-bottom: 16px;
+}
+.fc-right{
+    width: 50%;
+}
+.fc-right h2{
+    margin-bottom: 16px;
+}
+.fc-right p{
+    margin-bottom: 24px;
+}
+.btn-g a{
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #56C4C5;
+    color: #fff;
+    border-radius: 27px;
+}
+.fc-right a:hover{
+    background-color: #49aeb0;
+}
+.wrap2{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball02.svg);
+    background-repeat: no-repeat;
+    background-size: 310px 310px;
+    background-position: 1156px 410px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.fifth-content{
+    max-width: 1088px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+.fifth-content h2{
+    margin-bottom: 104px;
+}
+.recommend-card{
+    padding-top: 48px;
+    padding-bottom: 24px;
+    padding-left: 32px;
+    padding-right: 32px;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px #00000014;border-radius: 12px;
+}
+.fifth-content ul{
+    display: flex;
+    align-items: flex-end;
+    margin-right: -16px;
+    margin-bottom: 24px;
+}
+.fifth-content li{
+    width: 33%;
+    padding-right: 16px;
+    position: relative;
+}
+.photo{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 32px;
+    bottom: 90%;
+}
+.photo img{
+    vertical-align: middle;
+    border-radius: 50%;
+}
+.recommend-card .bdr-bt{
+    padding-bottom: 24px;
+    border-bottom: 1px solid #DDDDDD;
+    margin-bottom: 24px;
+}
+.company{
+    margin-bottom: 8px;
+}
+.introduce{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.introduce-star img{
+    height: 16px;
+    padding-right: 8.22px;
+}
+.pagination{
+    display:flex;
+    justify-content: center;
+}
+.dot{
+    background-color: #DDDDDD;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-right: 8px;
+}
+.long-dot{
+    background-color: #FFD153;
+    border-radius: 50%;
+    width: 16px;
+    height: 10px;
+}
+.wrap3{
+    max-width: 100%;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg);
+    background-size: 150px 150px;
+    background-repeat: no-repeat;
+    background-position: 50px 46px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.wrap4{
+    background-image: url(https://irenelee18.github.io/chatTalker/imag/home_footer.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 260px;
+    padding-bottom: 100px;
+}
+.footer-item h1{
+    margin-bottom: 48px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: #F5F5F5;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.footer p{
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+
+
+@media(max-width:768px) {
+    .header{
+        border-bottom: 2px solid #FFD153;
+    }
+    .logo img{
+        max-height:34px;
+    }
+    .top-content{
+        flex-wrap: wrap;
+    }
+    .top-content-slogen h4{
+        font-size: 16px;
+    }
+    .top-content-slogen h1{
+        font-size: 32px;
+    }
+    .top-content-slogen p{
+        font-size: 16px;
+    }
+    .top-content{
+        flex-wrap: wrap;
+        margin-bottom: 99px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .top-content-slogen, .top-content-img{
+        width: 100%;
+    }
+    .second-content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .second-content h2{
+        font-size: 28px;
+    }
+    .second-content h3{
+        font-size: 18px;
+    }
+    .second-content ul{
+        flex-wrap: wrap;
+    }
+    .second-content li{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    .third-content{
+        margin-bottom: 60px;
+    }
+    .card-list{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .card-item{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    .forth-content{
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    .fc-left{
+        width: 100%;
+    }
+    .fc-right{
+        width: 100%;
+        margin-bottom: 44px;
+    }
+    .fc-left ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .fc-left-card li {
+        margin-bottom: 24px;
+        margin-right: 0px;
+    }
+    .fc-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .fc-right h2,
+    .fc-right p{
+        text-align: center;
+    }
+    .wrap1{
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home_sm.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball01.svg);
+        background-size: 334px 244.79px,126px 126px;
+        background-position: 50% 391px, -77px 743px;
+    }
+    .wrap2{
+        background-repeat: no-repeat;
+        background-size: 135px 135px;
+        background-position: 287px 1661px;
+    }
+    .fifth-content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .fifth-content h2 {
+        margin-bottom: 88px;
+    }
+    .fifth-content ul {
+        flex-wrap: wrap;
+    }
+    .fifth-content .li2,
+    .fifth-content .li3{
+        display: none;
+    }
+    .fifth-content li{
+        width: 100%;
+        padding-right: 0px;
+    }
+    .recommend-card {
+        padding-left: 16px;
+        padding-right: 17px;
+    }
+    .wrap3 {
+        background-size: 153px 153px;
+        background-repeat: no-repeat;
+        background-position: -76px 40px;
+    }
+    .wrap4{
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/footer_sm.svg);
+    }
+    .wrap4 h1{
+        text-align: center;
+    }
+    .footer-item h1{
+        font-size: 24px;
+    }
+}
